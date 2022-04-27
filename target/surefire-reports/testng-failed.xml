@@ -7,7 +7,7 @@
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="LoginTest"/>
+          <include name="LoginTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.inetbankingV1.testcases.TC01_LoginTest -->
     </classes>

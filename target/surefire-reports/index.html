@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-com.inetbankingV1.testcases.TC01_LoginTest" class="navigator-link">
-              <span class="suite-name border-skipped">com.inetbankingV1.testcases.TC01_LoginTest</span>
+              <span class="suite-name border-failed">com.inetbankingV1.testcases.TC01_LoginTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-com.inetbankingV1.testcases.TC01_LoginTest" class="hide-methods skipped suite-com.inetbankingV1.testcases.TC01_LoginTest"> (hide)</a> <!-- hide-methods skipped suite-com.inetbankingV1.testcases.TC01_LoginTest -->
-                      <a href="#" panel-name="suite-com.inetbankingV1.testcases.TC01_LoginTest" class="show-methods skipped suite-com.inetbankingV1.testcases.TC01_LoginTest"> (show)</a> <!-- show-methods skipped suite-com.inetbankingV1.testcases.TC01_LoginTest -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-com.inetbankingV1.testcases.TC01_LoginTest" class="hide-methods failed suite-com.inetbankingV1.testcases.TC01_LoginTest"> (hide)</a> <!-- hide-methods failed suite-com.inetbankingV1.testcases.TC01_LoginTest -->
+                      <a href="#" panel-name="suite-com.inetbankingV1.testcases.TC01_LoginTest" class="show-methods failed suite-com.inetbankingV1.testcases.TC01_LoginTest"> (show)</a> <!-- show-methods failed suite-com.inetbankingV1.testcases.TC01_LoginTest -->
                     </span>
-                    <div class="method-list-content skipped suite-com.inetbankingV1.testcases.TC01_LoginTest">
+                    <div class="method-list-content failed suite-com.inetbankingV1.testcases.TC01_LoginTest">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-com.inetbankingV1.testcases.TC01_LoginTest" title="com.inetbankingV1.testcases.TC01_LoginTest" class="method navigator-link" hash-for-method="LoginTest">LoginTest</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-com.inetbankingV1.testcases.TC01_LoginTest" title="com.inetbankingV1.testcases.TC01_LoginTest" class="method navigator-link" hash-for-method="LoginTest(mngr397760, Eqyvyta)">LoginTest(mngr397760, Eqyvyta)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-com.inetbankingV1.testcases.TC01_LoginTest -->
+                    </div> <!-- method-list-content failed suite-com.inetbankingV1.testcases.TC01_LoginTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,46 +117,39 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-com.inetbankingV1.testcases.TC01_LoginTest" class="panel com.inetbankingV1.testcases.TC01_LoginTest">
-          <div class="suite-com.inetbankingV1.testcases.TC01_LoginTest-class-skipped">
+          <div class="suite-com.inetbankingV1.testcases.TC01_LoginTest-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.inetbankingV1.testcases.TC01_LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginTest">
-                  </a> <!-- LoginTest -->
+                  <a name="LoginTest(mngr397760, Eqyvyta)">
+                  </a> <!-- LoginTest(mngr397760, Eqyvyta) -->
                   <span class="method-name">LoginTest</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+                  <span class="parameters">(mngr397760, Eqyvyta)</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User or Password is not valid}
+  (Session info: chrome=100.0.4896.127): User or Password is not valid
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-KPHMMFU&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:53740}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e5d97520ba61ce3a1f9b66ed71f260bb
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-	at com.inetbankingV1.testcases.BaseClass.setup(BaseClass.java:70)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:13503/status] to be available after 20011 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 44 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 45 more
-... Removed 35 stack frames
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at com.inetbankingV1.testcases.TC01_LoginTest.LoginTest(TC01_LoginTest.java:22)
+... Removed 34 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-com.inetbankingV1.testcases.TC01_LoginTest-class-skipped -->
+          </div> <!-- suite-com.inetbankingV1.testcases.TC01_LoginTest-class-failed -->
         </div> <!-- panel com.inetbankingV1.testcases.TC01_LoginTest -->
         <div panel-name="test-xml-com.inetbankingV1.testcases.TC01_LoginTest" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -212,12 +205,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LoginTest')
 data.setCell(0, 2, 'com.inetbankingV1.testcases.TC01_LoginTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 7541);
 window.suiteTableData['com.inetbankingV1.testcases.TC01_LoginTest']= { tableData: data, tableDiv: 'times-div-com.inetbankingV1.testcases.TC01_LoginTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-com.inetbankingV1.testcases.TC01_LoginTest">
               </div> <!-- times-div-com.inetbankingV1.testcases.TC01_LoginTest -->
             </div> <!-- times-div -->
@@ -244,16 +237,20 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.inetbankingV1.testcases.TC01_LoginTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">LoginTest</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginTest(mngr397760, Eqyvyta)</span>
+                <span class="method-start">73244 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">81000 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -1,4 +1,0 @@
-INFO    2022-04-24 08:05:43,134 [main] com.inetbankingV1.testcases.BaseClass  - Entered username
-INFO    2022-04-24 08:05:43,285 [main] com.inetbankingV1.testcases.BaseClass  - Entered password
-INFO    2022-04-24 08:05:47,985 [main] com.inetbankingV1.testcases.BaseClass  - Clicking on Login button
-INFO    2022-04-24 08:05:48,005 [main] com.inetbankingV1.testcases.BaseClass  - Test case passed
